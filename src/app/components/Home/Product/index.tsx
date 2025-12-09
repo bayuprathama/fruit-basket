@@ -1,16 +1,18 @@
 'use client'
 
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { productData } from '@/app/types/productdata'
+import { ProductCategory, ProductType } from '@/app/types/productdata'
 import FeatureSkeleton from '@/app/Skeleton/Features'
 
 const Product = () => {
-  const [products, setProducts] = useState<productData[]>([])
+  const [products, setProducts] = useState<Record<
+    ProductType,
+    ProductCategory
+  > | null>(null)
   const [loading, setLoading] = useState(true)
-  const smoothies = products.smoothies
-  const mixJuice = products.mixJuice
-  const fruitJuice = products.fruitJuice
+  // const smoothies = products?.smoothies
+  // const mixJuice = products?.mixJuice
+  // const fruitJuice = products?.fruitJuice
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,33 +51,33 @@ const Product = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 text-black/70">
               <div className="bg-white rounded-2xl p-5 shadow-lg flex flex-col gap-5 px-8 py-8 ">
                 <h3 className="text-2xl font-semibold text-black mt-5">
-                  {smoothies.heading}
+                  {products?.smoothies.heading}
                 </h3>
                 <div className="flex flex-col gap-4 ">
-                  {smoothies.items.map((item, i) => (
+                  {products?.smoothies.items.map((item, i) => (
                     <div key={i} className="flex justify-between border-b pb-2">
                       <p className="font-semibold">{item.name}</p>
-                      <p>{item.price}</p>
+                      <p>{String(item.price)}</p>
                     </div>
                   ))}
                 </div>
               </div>
               <div className="bg-white rounded-2xl p-5 shadow-lg flex flex-col gap-5 px-8 py-8">
                 <h3 className="text-2xl font-semibold text-black mt-5">
-                  {mixJuice.heading}
+                  {products?.mixJuice.heading}
                 </h3>
                 <div className="flex flex-col gap-4 ">
-                  {mixJuice.items.map((item, i) => (
+                  {products?.mixJuice.items.map((item, i) => (
                     <div key={i} className="flex justify-between border-b pb-2">
                       <p className="font-semibold">{item.name}</p>
-                      <p>{item.price}</p>
+                      <p>{String(item.price)}</p>
                     </div>
                   ))}
                 </div>
               </div>
               <div className="bg-white rounded-2xl p-5 shadow-lg flex flex-col gap-5 px-8 py-8">
                 <h3 className="text-2xl font-semibold text-black mt-5">
-                  {fruitJuice.heading}
+                  {products?.fruitJuice.heading}
                 </h3>
                 <div className="flex flex-col gap-4">
                   <div className="grid grid-cols-3 gap-4 mb-4">
@@ -84,14 +86,18 @@ const Product = () => {
                     <p className="text-right font-semibold">Jumbo</p>
                   </div>
 
-                  {fruitJuice.items.map((item, i) => (
+                  {products?.fruitJuice.items.map((item, i) => (
                     <div
                       key={i}
                       className="grid grid-cols-3 gap-4 border-b pb-2"
                     >
                       <p className="font-semibold">{item.name}</p>
-                      <p className="text-center">{item.price[0].price}</p>
-                      <p className="text-right">{item.price[1].price}</p>
+                      {typeof item.price !== 'string' && (
+                        <p className="text-center">{item.price[0].price}</p>
+                      )}
+                      {typeof item.price !== 'string' && (
+                        <p className="text-center">{item.price[1].price}</p>
+                      )}
                     </div>
                   ))}
                 </div>

@@ -5,7 +5,7 @@ import { featureData } from '@/app/types/featuredata'
 import { socialLinksData } from '@/app/types/sociallinks'
 import { plansData } from '@/app/types/plans'
 import { footerlLinksData } from '@/app/types/footerlinks'
-// import { productData } from '@/app/types/productdata'
+import { ProductType, ProductCategory } from '@/app/types/productdata'
 
 const HeaderData: headerItem[] = [
   { label: 'Why us?', href: '#why' },
@@ -115,15 +115,8 @@ const SocialLinks: socialLinksData[] = [
     width: 14,
   },
 ]
-const ProductData: {
-  [key: string]: {
-    heading: string
-    items: {
-      name: string
-      price: string | { name: string; price: string }[]
-    }[]
-  }
-} = {
+
+const ProductData: Record<ProductType, ProductCategory> = {
   smoothies: {
     heading: 'Smoothies',
     items: [
