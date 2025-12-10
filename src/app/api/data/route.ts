@@ -100,18 +100,18 @@ const FooterLinks: footerlLinksData[] = [
 
 const SocialLinks: socialLinksData[] = [
   {
-    imgSrc: 'fa-brands:facebook-f',
-    link: 'www.facebook.com',
+    imgSrc: 'fa6-brands:tiktok',
+    link: 'https://www.tiktok.com/@fruit.basketnjuicee',
     width: 10,
   },
   {
-    imgSrc: 'fa6-brands:instagram',
-    link: 'www.instagram.com',
+    imgSrc: 'fa6-brands:whatsapp',
+    link: 'https://wa.me/628519313358',
     width: 14,
   },
   {
-    imgSrc: 'fa6-brands:twitter',
-    link: 'www.twitter.com',
+    imgSrc: 'fa6-brands:google',
+    link: 'https://www.google.com/maps/place/Fruit+Basket+%26+Juice+Jimbaran/@-8.7996559,115.1661635,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd245f879a0d9dd:0x88b2731949679646!8m2!3d-8.7996559!4d115.1661635!16s%2Fg%2F11ykxp_wr0?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D',
     width: 14,
   },
 ]
@@ -120,21 +120,21 @@ const ProductData: Record<ProductType, ProductCategory> = {
   smoothies: {
     heading: 'Smoothies',
     items: [
-      { name: 'Mangga', price: '15000' },
-      { name: 'Alpukat', price: '15000' },
-      { name: 'Buah Naga', price: '15000' },
-      { name: 'Strawberi', price: '15000' },
+      { name: 'Mangga', price: '15' },
+      { name: 'Alpukat', price: '15' },
+      { name: 'Buah Naga', price: '15' },
+      { name: 'Stroberi', price: '15' },
     ],
   },
   mixJuice: {
     heading: 'Mix Juice',
     items: [
-      { name: 'Mangga Strawberry', price: '15000' },
-      { name: 'Mangga Pisang', price: '15000' },
-      { name: 'Strawberry Pisang', price: '15000' },
-      { name: 'Buah Naga Pisang', price: '15000' },
-      { name: 'Buah Naga Strawberry', price: '15000' },
-      { name: 'Es Jeruk Peras', price: '10000' },
+      { name: 'Mangga Strawberry', price: '15' },
+      { name: 'Mangga Pisang', price: '15' },
+      { name: 'Strawberry Pisang', price: '15' },
+      { name: 'Buah Naga Pisang', price: '15' },
+      { name: 'Buah Naga Strawberry', price: '15' },
+      { name: 'Es Jeruk Peras', price: '10' },
     ],
   },
   fruitJuice: {
@@ -143,106 +143,106 @@ const ProductData: Record<ProductType, ProductCategory> = {
       {
         name: 'Alpukat',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Mangga',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Jeruk',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Melon',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Semangka',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Anggur',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Apel',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Sirsak',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Tomat',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Nanas',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Pepaya',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
-        name: 'Strawberi',
+        name: 'Stroberi',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Pisang',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Kurma',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
       {
         name: 'Buah Naga',
         price: [
-          { name: 'Sedang', price: '10000' },
-          { name: 'Jumbo', price: '15000' },
+          { name: 'Sedang', price: '10' },
+          { name: 'Jumbo', price: '15' },
         ],
       },
     ],

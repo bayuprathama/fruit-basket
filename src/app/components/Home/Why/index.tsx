@@ -28,8 +28,8 @@ const Why = () => {
   return (
     <section id="why">
       <div className="container">
-        <h2 className="text-midnight_text text-center mb-5 max-w-xl mx-auto sm:leading-16">
-          Freshness You Can Taste
+        <h2 className="text-black text-center mb-5 max-w-xl mx-auto sm:leading-16">
+          Freshness You Can Taste.
         </h2>
         <p className="text-black/60 text-lg text-center md:max-w-[60%] mx-auto leading-[1.6]">
           We use only carefully selected, farm-fresh fruits to ensure every
