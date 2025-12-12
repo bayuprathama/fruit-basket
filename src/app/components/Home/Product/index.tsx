@@ -34,7 +34,7 @@ const Product = () => {
   }, [])
 
   return (
-    <section id="product" className="py-20">
+    <section id="product" className="py-20 ">
       <div className="container">
         <h2 className="text-black text-center mb-5 max-w-xl mx-auto sm:leading-16 px-6">
           Our Fresh Selection.
@@ -43,7 +43,7 @@ const Product = () => {
           This is our product list made from fresh, locally sourced fruits to
           give.
         </p>
-        <div className="bg-white">
+        <div className="bg-white rounded-2xl">
           {loading ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
               {Array.from({ length: 3 }).map((_, i) => (
@@ -51,7 +51,7 @@ const Product = () => {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 rounded-2xl shadow-lg lg:grid-cols-3 gap-8 mt-10 text-black/70">
+            <div className="grid grid-cols-1 sm:grid-cols-2 rounded-2xl shadow-lg lg:grid-cols-3 gap-8 mt-10 text-black/70 ">
               <div className="p-5 flex flex-col gap-5 px-8 py-8 ">
                 <h3 className="text-2xl font-semibold text-green-primary mb-5">
                   {products?.smoothies.heading}
